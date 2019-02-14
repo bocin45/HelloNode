@@ -1,12 +1,7 @@
 const http = require('http');
 
-function rqLister (request, response){
+const requestHandler = require('./routes');
 
-}
-
-const server = http.createServer((request, response) =>{
-        console.log(request);
-});
+const server = http.createServer(requestHandler);
 
 server.listen(8080);
-server.
